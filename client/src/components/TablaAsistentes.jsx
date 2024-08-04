@@ -7,8 +7,8 @@ const TablaAsistentes = () => {
     const [isUserCountModalOpen, setIsUserCountModalOpen] = useState(false);
 
     const users = [
-        { id: 1, name: 'John Doe', email: 'john@example.com', attendance: [true, false] },
-        { id: 2, name: 'Jane Smith', email: 'jane@example.com', attendance: [false, false] },
+        { id: 1, name: 'Asistente Uno', email: 'Asistente1@example.com', attendance: [true, false] },
+        { id: 2, name: 'Asistente Dos', email: 'Asistente2@example.com', attendance: [false, false] },
         // Añade más usuarios según sea necesario
     ];
 

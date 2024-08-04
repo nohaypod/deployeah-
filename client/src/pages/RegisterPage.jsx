@@ -9,9 +9,9 @@ const RegisterPage = () => {
 
     const onSubmit = handleSubmit(async (values) => {
         console.log(values)
-        //const res = await registerRequest(values)
-        //console.log(res)
-        navigate('/exito')
+        const res = await registerRequest(values)
+        console.log(res)
+        navigate('/exito', { state: values })
     })
 
     return (
