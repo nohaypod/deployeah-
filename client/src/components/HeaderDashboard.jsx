@@ -9,7 +9,7 @@ const HeaderDashboard = () => {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <Link to="/dashboard" className="text-white hover:text-gray-300">Dashboard</Link>
+              <Link to="/dashboard" className="text-white hover:text-gray-300">Asistentes</Link>
             </li>
             <li>
               <Link to="/qrlector" className="text-white hover:text-gray-300">Escaner QR</Link>

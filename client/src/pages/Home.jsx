@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom'
 import FooterLanding from '../components/FooterLanding'
 import Section from '../components/Section'
 import hero from '../img/hero.jpeg'
+import HeaderHome from '../components/HeaderHome'
 
 const Home = () => {
   return (
     <>
-      <div className='max-q mx-auto bg-gradient-home px-32 py-10'>
-        <h1 className='text-4xl text-center py-2 font-bold'>Asociacion de Eventos Presenciales de Corazón</h1>
-        <div className='flex items-center justify-evenly m-10'>
+    <HeaderHome></HeaderHome>
+      <div className='max-q mx-auto bg-gradient-home px-32'>   
+        {/* <h1 className='text-4xl text-center py-2 font-bold'>Asociacion de Eventos Presenciales de Corazón</h1> */}
+        <div className='flex items-center justify-evenly py-10'>
           <div className='flex-1 pr-8'>
             <h1 className='text-6xl font-bold'>Evento 2024</h1>
             <p className='text-2xl mb-6'>Descripción o contenido adicional que proporciona más información sobre el evento.</p>
