@@ -4,5 +4,11 @@
 
 body {
     background: #ffe1e1;
-    color: black;
+    color: rgb(68, 68, 150);
+}
+
+/* Clase gradiente */
+.bg-gradient-home {
+    @apply bg-gradient-to-b from-white to-blue-500;
+
 }

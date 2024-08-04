@@ -1,17 +1,36 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import FooterLanding from '../components/FooterLanding'
+import Section from '../components/Section'
 
 const Home = () => {
   return (
     <>
-      <div className='flex flex-col h-[calc(100vh-100px)] items-center justify-center mx-2'>
-        <h1 className="text-4xl font-bold my-8">Evento 2024</h1>
-        <div className="bg-slate-100 max-w-md p-10 rounded-md border shadow-md flex justify-center">
-          <img src="https://via.placeholder.com/200" alt="Placeholder Image" className="w-48 h-auto rounded-md" />
+      <div className='bg-gradient-home px-20 p-10'>
+        <h1 className='text-5xl text-center py-4 font-bold'>Asociacion de Eventos Presenciales</h1>
+        <div className='flex items-center justify-between  p-8 h-[calc(100vh-100px)]'>
+          <div className='flex-1 pr-8'>
+            <h1 className='text-5xl font-bold  mb-4'>Evento 2024</h1>
+            <p className='text-2xl mb-6'>Descripción o contenido adicional que proporciona más información sobre el evento.</p>
+            <Link to='/register'>
+              <button type='button' className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
+                Registrarme
+              </button>
+            </Link>
+          </div>
+
+          <div className='flex-1'>
+            <img
+              src="https://via.placeholder.com/500x300"
+              alt="Descripción de la imagen"
+              className=' h-auto object-cover rounded-lg shadow-lg'
+            />
+          </div>
+
         </div>
-        <Link to='/register'><button type='' className=" bg-red-500 my-4 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
-          Registrarme
-        </button></Link>
+
+      <Section />
+      <FooterLanding />
       </div>
     </>
   )
