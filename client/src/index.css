@@ -9,6 +9,6 @@ body {
 
 /* Clase gradiente */
 .bg-gradient-home {
-    @apply bg-gradient-to-b from-white to-blue-500;
-
+    @apply bg-cover bg-center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(59, 130, 246, 0.7)), url('/src/assets/hero.jpeg');
 }
