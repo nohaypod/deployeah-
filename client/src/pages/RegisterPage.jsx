@@ -10,7 +10,14 @@ const RegisterPage = () => {
     const navigate = useNavigate()
 
     const onSubmit = handleSubmit(async (values) => {
-        console.log(values)
+        console.log(values);
+        const response = await fetch('/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(values)
+        });
         // const res = await registerRequest(values)
         //console.log(res)
         navigate('/exito', { state: values })
