@@ -13,8 +13,8 @@ const Home = () => {
         {/* <h1 className='text-4xl text-center py-2 font-bold'>Asociacion de Eventos Presenciales de Corazón</h1> */}
         <div className='flex items-center justify-evenly py-10'>
           <div className='flex-1 pr-8'>
-            <h1 className='text-6xl font-bold'>Evento 2024</h1>
-            <p className='text-2xl mb-6'>Descripción o contenido adicional que proporciona más información sobre el evento.</p>
+            <h1 className='text-6xl font-bold'>Congreso AEPC 2024</h1>
+            <p className='text-2xl mb-6'>Expertos en eventología nacionales e internacionales.</p>
             <Link to='/register'>
               <button type='button' className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6  transition-colors duration-300">
                 Registrarme

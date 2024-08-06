@@ -15,7 +15,7 @@ export const register = async (req, res) =>{
         });
 
         // Generar el código QR y almacenarlo en el documento
-        const qrCodeText = `Nombre: ${nombre}, Apellidos: ${apellidos}, Email: ${email}`;
+        const qrCodeText = `nombre: ${nombre}, apellidos: ${apellidos}, email: ${email}`;
         const qrCodeImage = await qrcode.toBuffer(qrCodeText);
 
         newRsvp.qrcodeImage = qrCodeImage;
