@@ -25,7 +25,7 @@ const rsvpSchema = new mongoose.Schema(
           },
           qrcodeImage:
           {
-            type: Buffer
+            type: String
           },
           
     },
